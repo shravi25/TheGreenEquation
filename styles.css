@@ -1,0 +1,409 @@
+/* Removes default browser spacing */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+/* Whole page */
+
+body{
+
+    font-family: 'Poppins', sans-serif;
+    background:#eef8ef;
+
+}
+
+header{
+
+    height:80px;
+
+    background:linear-gradient(
+    135deg,
+    #2d6631,
+    #5e7742,
+    #2d6631
+    );
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:0 70px;
+
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
+
+}
+
+
+/* Main container */
+
+.container{
+
+    display:flex;
+    min-height:calc(100vh - 80px - 60px);
+    background:linear-gradient(
+    135deg,
+    #e8f5e9,
+    #dcedc8,
+    #f7fff7
+    );
+
+}
+
+
+/* Left Section */
+
+.left{
+
+    width:50%;
+   
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:80px;
+
+}
+
+.logo {
+    color: #2E7D32;
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+
+
+.left h1{
+
+    color:#2E7D32;
+    font-size:40px;
+
+}
+
+
+.left h2{
+
+    margin-top:25px;
+    font-size:55px;
+    color:#1b5e20;
+
+}
+
+
+.left p{
+
+    margin-top:25px;
+    font-size:20px;
+    color:#555;
+    line-height:35px;
+
+}
+
+footer{
+
+    height:60px;
+
+    background:linear-gradient(
+    135deg,
+    #2d6631,
+    #5e7742,
+    #2d6631
+    );
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    font-size:14px;
+
+}
+
+footer span{
+
+    color:#C8E6C9;
+
+}
+
+
+
+/* Right Section */
+
+.right{
+
+    width:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+
+/* Login Card */
+
+.login-box{
+
+    width:430px;
+    background:white;
+    padding:45px;
+    border-radius:20px;
+    box-shadow:0px 10px 35px rgba(0,0,0,.12);
+
+}
+
+
+.login-box h2{
+
+    text-align:center;
+    color:#1b5e20;
+}
+
+
+.login-box p{
+
+    text-align:center;
+    margin-top:10px;
+    color:gray;
+}
+
+
+/* Inputs */
+
+input{
+
+    width:100%;
+    padding:15px;
+    margin-top:20px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    font-size:16px;
+}
+
+
+
+/* Button */
+
+button{
+
+    width:100%;
+    margin-top:30px;
+    padding:15px;
+    background:#2E7D32;
+    color:white;
+    border:none;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+
+button:hover{
+
+    background:#1B5E20;
+}
+
+label {
+
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #444;
+}
+
+.forgot-password{
+    text-align:right;
+    margin-top:-34px;
+}
+
+.forgot-password a{
+    text-decoration:none;
+    color:#2E7D32;
+    font-size:14px;
+}
+
+.forgot-password a:hover{
+    text-decoration:underline;
+}
+
+.remember-me{
+
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin:15px 0;
+
+}
+
+.remember-me input{
+
+    width:16px;
+    height:16px;
+
+}
+
+.remember-me label{
+
+    margin:0;
+    font-size:15px;
+    font-weight:normal;
+    margin-top:20px;
+
+}
+
+.tagline{
+
+    color:#2E7D32;
+    font-weight:bold;
+    letter-spacing:1px;
+    font-size:14px;
+    margin-bottom:15px;
+
+}
+
+.logo-circle{
+
+    width: 70px;
+    height: 70px;
+
+    background:#346228;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    box-shadow:0 12px 30px rgba(0,0,0,0.15);
+
+    margin-bottom:-1px;
+    flex-shrink:0;
+
+}
+
+.login-box{
+    transition:0.3s ease;
+}
+
+.login-card:hover{
+
+    transform:translateY(-8px);
+    box-shadow:0px 18px 40px rgba(0,0,0,0.18);
+
+}
+.logo-circle img {
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.brand{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin: bottom -49px;
+
+}
+
+.brand-text h1{
+
+    color:#dee4df;
+
+    font-size:20px;
+
+    margin-bottom:-6px;
+
+}
+
+.signup-link{
+
+    margin-top:25px;
+
+    text-align:center;
+
+}
+
+.signup-link p{
+
+    color:#666;
+
+    font-size:15px;
+
+}
+
+.signup-link a{
+
+    color:#2E7D32;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    margin-left:5px;
+
+}
+
+.signup-link a:hover{
+
+    text-decoration:underline;
+
+}
+
+.stats {
+
+    display:flex;
+
+    gap:20px;
+
+    margin-top:40px;
+
+}
+
+.stat-card{
+
+    background:#f7fff7;
+
+    padding:5px;
+
+    border-radius:15px;
+
+    width:140px;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.stat-card h3{
+
+    color:#2E7D32;
+
+    font-size:24px;
+
+    margin-bottom:8px;
+
+}
+
+.stat-card p{
+
+    font-size:18px;
+
+    color:#666;
+
+    line-height:18px;
+
+}
+
